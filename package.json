@@ -1,13 +1,19 @@
+
 {
   "name": "my-profile",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal portfolio website built with Node.js, Express.js, HTML, and CSS.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "nodejs",
+    "express",
+    "web-development"
+  ],
+  "author": "Nabyl Jawahir",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
