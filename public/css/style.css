@@ -1,0 +1,384 @@
+
+/* ========================================
+   NABYL.DEV - GLOBAL STYLES
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0B1120;
+    color: #E5E7EB;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B1120;
+    border-bottom: 1px solid #1E293B;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #22D3EE;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #CBD5E1;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #22D3EE;
+}
+
+/* ========================================
+   CONTAINER & SECTIONS
+======================================== */
+
+.container {
+    width: 84%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+section {
+    padding: 85px 0;
+}
+
+.section-label {
+    color: #22D3EE;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #F8FAFC;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 680px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    color: #F8FAFC;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #22D3EE;
+}
+
+.hero-description {
+    max-width: 650px;
+    color: #94A3B8;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   PROFILE IMAGE
+======================================== */
+
+.hero-photo {
+    width: 320px;
+    height: 320px;
+    border: 2px solid #22D3EE;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
+    background: #111C30;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #22D3EE;
+    color: #0B1120;
+}
+
+.btn-primary:hover {
+    background: #67E8F9;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid #22D3EE;
+    color: #22D3EE;
+}
+
+.btn-outline:hover {
+    background: #164E63;
+}
+
+/* ========================================
+   CARD LAYOUT
+======================================== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111C30;
+    border: 1px solid #243247;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #22D3EE;
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: #F8FAFC;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+.card-tag {
+    display: inline-block;
+    color: #22D3EE;
+    background: #164E63;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    padding: 10px 16px;
+    background: #111C30;
+    border: 1px solid #243247;
+    border-radius: 6px;
+    color: #CBD5E1;
+    font-size: 14px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 25px 8%;
+    text-align: center;
+    border-top: 1px solid #1E293B;
+    color: #64748B;
+    font-size: 13px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 18px 6%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        width: 88%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 0;
+    }
+
+    .hero-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+}
+
+/* ========================================
+   NETWORKING PAGE
+======================================== */
+
+.network-hero {
+    padding: 100px 0 80px;
+    background:
+        radial-gradient(
+            ellipse at 80% 20%,
+            rgba(34, 211, 238, 0.08),
+            transparent 55%
+        );
+}
+
+.network-title {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.2;
+    color: #F8FAFC;
+    margin-bottom: 25px;
+}
+
+.network-title span {
+    color: #22D3EE;
+}
+
+.network-hero .hero-description {
+    max-width: 700px;
+}
+
+/* Networking sections */
+
+#specializations {
+    scroll-margin-top: 90px;
+}
+
+.network-hero + section {
+    padding-top: 70px;
+}
+
+/* Networking responsive */
+
+@media (max-width: 700px) {
+
+    .network-hero {
+        padding: 65px 0 45px;
+        text-align: center;
+    }
+
+    .network-title {
+        font-size: 36px;
+    }
+
+    .network-hero .hero-buttons {
+        justify-content: center;
+    }
+
+}
